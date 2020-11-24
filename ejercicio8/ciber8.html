@@ -1,45 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+ <head>
     <title>Ejercicio 8</title>
-</head>
-<body>
-    
-<!--Pull Request para Luis-->
-<!-- cambio -->
-
-    <script>
-       
-        var valor1 = prompt("Ingrese un valor");
-
-        valor1 = parseInt(valor1)
-
-        var valor2 = prompt("Ingrese otro valor");
-
-        valor2 = parseInt(valor2);
-
-        var suma = valor1 + valor2;
-    
-
-        alert("la suma es " + suma);
-
-        var resta = valor1 - valor2;
-
-        alert("la resta es " + resta);
-
-        var multiplicar = valor1 * valor2;
-
-        alert("la multiplicacion es " + multiplicar);
-
-        var dividir = valor1 / valor2;
-
-        alert("la division es " + dividir);
-
-
-    </script>
-
-
-</body>
+    <script type="text/javascript" src="script.js"></script>
+ </head>
+ <body>
+  Numero 1:<input id="num1" type="number"> <br />
+  Numero 2:<input id="num2" type="number"> <br />
+  <input type="radio" name="calc" id="soma"/> Suma<br />
+ <input type="radio" name="calc" id="subtracao"/> Resta<br />
+ <input type="radio" name="calc" id="multiplicacao"/> Multiplicacion<br />
+ <input type="radio" name="calc" id="divisao"/> Division<br />
+ <button onclick="main()">Calcular</button><br />
+ Respuesta: <div id="resp"></div>
+ </body>
 </html>
